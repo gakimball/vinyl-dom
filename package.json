@@ -4,8 +4,11 @@
   "description": "Vinyl adapter for the DOM.",
   "main": "index.js",
   "scripts": {
-    "start": "watchify index.js -o vinyl-dom.js --standalone vinylDOM",
-    "test": "mocha"
+    "start": "mochify --watch",
+    "phantom": "mochify",
+    "wd": "mochify --wd",
+    "cover": "mochify --cover",
+    "test": "npm run phantom && npm run wd && npm run cover"
   },
   "repository": {
     "type": "git",
@@ -24,8 +27,10 @@
   "homepage": "https://github.com/gakimball/vinyl-dom#readme",
   "devDependencies": {
     "browserify": "^13.0.0",
-    "chai": "^3.5.0",
-    "mocha": "^2.4.5",
-    "mocha-phantomjs": "^4.0.2"
+    "mocha-phantomjs": "^4.0.2",
+    "mochify": "^2.16.0"
+  },
+  "dependencies": {
+    "vinyl": "^1.1.1"
   }
 }
