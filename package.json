@@ -1,6 +1,6 @@
 {
   "name": "vinyl-dom",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Vinyl adapter for the DOM.",
   "main": "index.js",
   "scripts": {
