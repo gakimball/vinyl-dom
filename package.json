@@ -28,7 +28,8 @@
   "devDependencies": {
     "browserify": "^13.0.0",
     "mocha-phantomjs": "^4.0.2",
-    "mochify": "^2.16.0"
+    "mochify": "^2.16.0",
+    "through2": "^2.0.0"
   },
   "dependencies": {
     "vinyl": "^1.1.1"
